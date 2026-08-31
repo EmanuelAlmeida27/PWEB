@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emanuel Almeida">
+    <meta name="description" content="Site do artigo da atividade 2">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Artigo</title>
+</head>
+
+<body>
+    <div class="nav-sumario">
+        <header>
+        <nav>
+            <ol>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#definicao">Definição de framework</a></li>
+                <li><a href="#classificacao">Classificação e tipos de frameworks</a></li>
+                <li><a href="#exemplos">Exemplos de frameworks</a></li>
+                <li><a href="#criterios">Critérios de escolha</a></li>
+                <li><a href="#sintese">Síntese da comparação empírica</a></li>
+                <li><a href="#consideracoes">Considerações finais</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ol>
+        </nav>
+    </header>
+    </div>
+    <div class="corpo">
+        <main>
+            <section id="introducao">
+                <h1 class="titulo"><strong>Introdução</strong></h1>
+                <p class="texto">&ensp;&ensp;
+                    O desenvolvimento de software evoluiu do reaproveitamento de códigos e
+                    padrões para uma arquitetura que serve de base para a construção de aplicativos.
+                    Neste contexto os Frameworks se tornam altamente importantes já que sua tarefa não
+                    é apenas servir como um conjunto de funções pré-escritas, mas também como a base
+                    estrutural que determina como as partes de um aplicativo interagem entre si. A partir
+                    desta perspectiva o uso de Frameworks permite diminuir os custos e aumentar a
+                    qualidade enquanto se lida com um ambiente de software complexo e heterogêneo
+                </p>
+            </section>
+
+            <section id="definicao">
+                <h1 class="titulo"><strong>Definição de framework</strong></h1>
+                <p class="texto">&ensp;&ensp;
+                    O framework é caracterizado como uma aplicação parcialmente pronta e que
+                    pode ser adaptada e reutilizada para produzir aplicativos específicos. Não há
+                    necessidade de projetar tudo do zero já que o desenvolvimento se dá com base em
+                    uma estrutura já projetada e que reutiliza padrões.
+
+                </p>
+                <p class="texto">&ensp;&ensp;
+                    Em particular o elemento chave deste conceito é a inversão de controle. De
+                    fato, no caso das bibliotecas o código do aplicativo chama as funções fornecidas pela
+                    biblioteca enquanto no caso dos frameworks o fluxo principal de controle pertence ao
+                    próprio framework que chama o código do desenvolvedor utilizando callbacks e hooks
+                    ou manipuladores de eventos.
+                </p>
+                <p class="texto">&ensp;&ensp;Em resumo, destaca-se quatro vantagens chave dos frameworks:</p>
+                <ul>
+                    <li>
+                        <p class="texto">&ensp;&ensp;Modularidade devido ao isolamento da implementação em interfaces estáveis;</p>
+                    </li>
+                    <li>
+                        <p class="texto">&ensp;&ensp;Reutilização devido a capacidade de reutilizar soluções validadas;</p>
+                    </li>
+                    <li>
+                        <p class="texto">&ensp;&ensp;Extensibilidade devido aos pontos de adaptação;</p>
+                    </li>
+                    <li>
+                        <p class="texto">&ensp;&ensp;Inversão de controle devido aos eventos e callbacks que controlam o fluxo de
+                            controle da aplicação.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="classificacao">
+                <h1 class="titulo"><strong>Classificação e tipos de frameworks</strong></h1>
+                <p class="texto">&ensp;&ensp;
+                    Com base nas fontes existem dois modos de agrupar os frameworks
+                    dependendo do seu escopo de ação e da sua extensibilidade. Quanto ao primeiro
+                    modo eles podem ser úteis na implementação da infraestrutura do sistema, do
+                    middleware e até mesmo em aplicações de negócios mais gerais. Quanto ao segundo
+                    modo os frameworks podem ser do tipo "caixa branca" e "caixa preta".
+                </p>
+
+                <h2 class="subtitulo">&ensp;&ensp;<strong>Quanto ao escopo</strong></h2>
+                <ul>
+                    <li>
+                        <p class="texto">&ensp;&ensp;
+                            Paradigmas de infraestrutura de sistema permitem o desenvolvimento de serviços
+                            básicos de sistema, como subsistemas de interface ou de comunicação.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="texto">&ensp;&ensp;
+                            Paradigmas de middleware permitem a integração de aplicações ou componentes
+                            distribuídos, como ORBs, sistemas de mensagens e bancos de dados transacionais.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="texto">&ensp;&ensp;
+                            Paradigmas de aplicação empresarial são destinados a tarefas mais amplas e geram
+                            maior lucro quando o produto resultante é entregue diretamente ao usuário final.
+                        </p>
+                    </li>
+                </ul>
+
+                <h2 class="subtitulo">&ensp;&ensp;<strong>Quanto ao modo de extensão</strong></h2>
+                <ul>
+                    <li>
+                        <p class="texto">&ensp;&ensp;
+                            White-box: Elas utilizam extensivamente o mecanismo de herança e precisam de
+                            compreensão da arquitetura interna.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="texto">&ensp;&ensp;
+                            Black-box: Elas utilizam a composição e interfaces plugáveis, sendo assim mais
+                            fáceis de estender e usar.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="exemplos">
+                <h1 class="titulo"><strong>Exemplos de frameworks</strong></h1>
+                <table class="tabela">
+                    <thead class="cabecalho_tab">
+                        <th class="item_cabecalho_tab"><strong>Framework</strong></th>
+                        <th class="item_cabecalho_tab"><strong>Linguagem</strong></th>
+                        <th class="item_cabecalho_tab"><strong>Destaque</strong></th>
+                        <th class="item_cabecalho_tab"><strong>Uso mais associado</strong></th>
+                    </thead>
+                    <tbody class="corpo_tab">
+                        <tr class="linha_tab">
+                            <td class="item_tab">CodeIgniter</td>
+                            <td class="item_tab">PHP</td>
+                            <td class="item_tab">
+                                Maior velocidade geral no teste comparativo e
+                                configuração simples
+                            </td>
+                            <td class="item_tab">
+                                Sites pequenos e médios, com foco em leveza.
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Laravel</td>
+                            <td class="item_tab">PHP</td>
+                            <td class="item_tab">
+                                Boa documentação, ecossistema amplo e equilíbrio entre
+                                robustez e produtividade.
+                            </td>
+                            <td class="item_tab">Projetos web que pedem rapidez sem abrir mão de recursos.</td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Symfony</td>
+                            <td class="item_tab">PHP</td>
+                            <td class="item_tab">
+                                Estrutura poderosa, porém, mais complexa para iniciantes.
+                            </td>
+                            <td class="item_tab">Projetos maiores e equipes experientes.</td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Zend Framework </td>
+                            <td class="item_tab">PHP</td>
+                            <td class="item_tab">
+                                Perfil robusto e mais rígido de configuração.
+                            </td>
+                            <td class="item_tab">Cenários que exigem maior formalização arquitetural.</td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">ASP.NET Core</td>
+                            <td class="item_tab">C#</td>
+                            <td class="item_tab">
+                                Boa oferta de recursos, suporte corporativo e independência de plataforma
+                            </td>
+                            <td class="item_tab">Soluções web e corporativas de maior porte.</td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Spring Boot</td>
+                            <td class="item_tab">Java</td>
+                            <td class="item_tab">
+                                Forte adequação a sistemas enterprise e multithreading.
+                            </td>
+                            <td class="item_tab">Aplicações grandes, distribuídas e com alta concorrência.</td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Django</td>
+                            <td class="item_tab">Python</td>
+                            <td class="item_tab">É associado a segurança e agilidade de entrega.</td>
+                            <td class="item_tab">Aplicações web com prioridade para produtividade e proteção.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="texto">&ensp;&ensp;
+                    Como se pode ver na tabela acima é resumido alguns exemplos de frameworks.
+                    O ponto chave aqui não é apenas a popularidade do framework, mas sua
+                    aplicabilidade na natureza do problema que se quer resolver.
+                </p>
+
+            </section>
+
+            <section id="criterios">
+                <h1 class="titulo"><strong>Critérios de escolha</strong></h1>
+                <p class="texto">&ensp;&ensp;
+                    É necessário escolher o framework de acordo com requisitos específicos e não
+                    de preferências pessoais ou tendências, considerando, por exemplo, orçamento,
+                    desempenho, tipo de produto, tipo de projeto e tipo de usuário, além da
+                    manutenibilidade, a integração, a curva de aprendizado e a eficiência.
+                </p>
+
+                <table class="tabela">
+                    <thead class="cabecalho_tab">
+                        <th class="item_cabecalho_tab"><strong>Crtitério</strong></th>
+                        <th class="item_cabecalho_tab"><strong>O que observar</strong></th>
+                    </thead>
+                    <tbody class="corpo_tab">
+                        <tr class="linha_tab">
+                            <td class="item_tab">Porte do projeto</td>
+                            <td class="item_tab">
+                                <p class="texto">Projetos pequenos e médios tendem a
+                                    se beneficiar de frameworks mais leves;
+                                    projetos grandes exigem ecossistemas
+                                    mais completos.</p>
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Desempenho</td>
+                            <td class="item_tab">
+                                <p class="texto">A resposta do framework sob carga, o
+                                    tempo de carga e o custo das operações
+                                    influenciam a experiência final.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Curva de aprendizagem</td>
+                            <td class="item_tab">
+                                <p class="texto">Frameworks mais rígidos e mais ricos
+                                    em convenções podem exigir mais
+                                    tempo da equipe.</p>
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Documentação e comunidade</td>
+                            <td class="item_tab">
+                                <p class="texto">Documentação clara e comunidade ativa
+                                    reduzem o risco de adoção.</p>
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Suporte corporativo </td>
+                            <td class="item_tab">
+                                <p class="texto">Em contextos empresariais, suporte
+                                    oficial pode ser decisivo.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Escalabilidade</td>
+                            <td class="item_tab">
+                                <p class="texto">A solução precisa crescer com o volume
+                                    de usuários, dados e requisições.</p>
+                            </td>
+                        </tr>
+                        <tr class="linha_tab">
+                            <td class="item_tab">Segurança</td>
+                            <td class="item_tab">
+                                <p class="texto">O framework deve ajudar a prevenir
+                                    falhas comuns e facilitar boas práticas.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="texto">&ensp;&ensp;
+                    Na prática, a escolha mais segura costuma nascer da combinação entre
+                    requisitos funcionais, limitações técnicas da equipe e perspectiva de crescimento do
+                    produto.
+                </p>
+
+            </section>
+
+            <section id="sintese">
+                <h1 class="titulo"><strong>Síntese da comparação empírica
+                    </strong></h1>
+                <p class="texto">&ensp;&ensp;
+                    O desempenho dos frameworks varia dependendo da situação. O CodeIgniter
+                    se prova o mais rápido em termos de testes de carga geral e operações CRUD
+                    enquanto o Laravel equilibra a velocidade com a robustez. Por outro lado, os
+                    frameworks Symfony e Zend se provam desafiadores, mas ao mesmo tempo ideais
+                    para equipes de especialistas e sistemas avançados. Os frameworks Spring Boot e
+                    ASP.NET Core se destacam em soluções de grande escala bem como em ambientes
+                    corporativos.
+                </p>
+                <p class="texto">&ensp;&ensp;
+                    Essa conclusão elimina uma noção simplista de que o framework mais rápido
+                    é o melhor. A escolha de um framework deve ser baseada na situação particular.
+                </p>
+
+            </section>
+
+            <section id="consideracoes">
+                <h1 class="titulo"><strong>Considerações finais</strong></h1>
+                <p class="texto">&ensp;&ensp;
+                    Frameworks são estruturas que concentram conhecimento de arquitetura,
+                    padrões e reutilização em uma base reaproveitável. O ponto chave dos frameworks é
+                    a redução da repetição, a organização do processo de execução e a capacidade de
+                    se concentrar na regra de negócio. Assim é possível concluir que existem distinções
+                    claras entre frameworks leves, fortes e corporativos. Portanto a escolha do framework
+                    irá depender da situação. Um framework leve e simples pode ser necessário para um
+                    projeto menor, a produtividade pode ser a prioridade para projetos de porte médio e
+                    sistemas grandes exigirão um ecossistema maduro.
+                </p>
+            </section>
+
+            <section id="referencias">
+                <h1 class="titulo"><strong>Referências</strong></h1>
+                <p class="referencia">ANJUM, Nirjhor; ALAM, Shamim. A comparative analysis on widely used web
+                    frameworks to choose the requirement-based development technology.
+                    International Advanced Research Journal in Science, Engineering and
+                    Technology, v. 6, n. 9, 2019. DOI: 10.17148/IARJSET.2019.6902.</p>
+                <p class="referencia">FAYAD, Mohamed E.; SCHMIDT, Douglas C. Object-oriented application frameworks.
+                    Communications of the ACM, v. 40, n. 10, p. 32-38, 1997. DOI:
+                    10.1145/262793.262798.</p>
+                <p class="referencia">
+                    GUMAROVA, Aynura; RABCAN, J.; VAKHITOVA, A.; KAMALOVA, G. Modern
+                    frameworks for web-application development. Ġylym ža̋ne bìlìm, 2023. DOI:
+                    10.52578/2305-9397-2023-3-2-42-50
+                </p>
+            </section>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy;Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

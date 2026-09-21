@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1920px) {
+    .container {
+        background-color: yellow;
+    }
+    
+    .container h2 {
+        visibility: hidden;
+    }
+
+    .container h2::before {
+        content: "Amarelo";
+        visibility:visible;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1081px){
+    .container {
+        background-color: purple;
+    }
+
+    .container h2 {
+        visibility: hidden;
+    }
+
+    .container h2::before {
+        content: "Roxo";
+        visibility: visible;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 1025px){
+    .container {
+        background-color: red;
+    }
+
+    .container h2 {
+        visibility: hidden;
+    }
+
+    .container h2::before {
+        content: "Vermelho";
+        visibility: visible;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        background-color: rgb(255, 59, 187);
+    }
+
+    .container h2 {
+        visibility: hidden;
+    }
+
+    .container h2::before {
+        content: "Rosa";
+        visibility: visible;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 421px) {
+    .container {
+        background-color: orange;
+    }
+
+    .container h2 {
+        visibility: hidden;
+    }
+    .container h2::before {
+        content: "Laranja";
+        visibility: visible;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        background-color: gray;
+    }
+    .container h2 {
+        visibility: hidden;
+    }
+    .container h2::before {
+        content: "Cinza";
+        visibility: visible;
+        margin-left: 60px;
+    }
+}

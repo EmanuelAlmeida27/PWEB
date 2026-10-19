@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 | Pedra Papel Tesoura</title>
+</head>
+<body>
+    
+    <script>
+        alert('Iniciando...');
+        let escolhaUsuario = prompt('Digite sua escolha [Pedra, Papel ou Tesoura]: ').toLowerCase();
+        while (!escolhaUsuario || escolhaUsuario !== 'pedra' && escolhaUsuario !== 'papel' && escolhaUsuario !== 'tesoura') {
+            alert('Digite uma escolha válida!');
+            escolhaUsuario = prompt('Digite sua escolha [Pedra, Papel ou Tesoura]: ').toLowerCase();
+        }
+        
+        let numero = Math.random();
+        let escolhaComputador = "";
+
+        if (numero >= 0 && numero <= 0.33) {
+            escolhaComputador = 'pedra';
+        } else if (numero > 0.33 && numero <= 0.67) {
+            escolhaComputador = 'papel';
+        } else if (numero > 0.67 && numero <= 1) {
+            escolhaComputador = 'tesoura';
+        }
+        
+        alert(`Você escolheu ${escolhaUsuario}. O computador escolheu ${escolhaComputador}`);
+
+        if (escolhaUsuario == escolhaComputador) {
+            alert('Empate!');
+        } else if (escolhaUsuario == 'pedra' && escolhaComputador == 'tesoura') {
+            alert('Você ganhou! Pedra quebra Tesoura.');
+        } else if (escolhaUsuario == 'papel' && escolhaComputador == 'pedra') {
+            alert('Você ganhou! Papel cobre Pedra.');
+        } else if (escolhaUsuario == 'tesoura' && escolhaComputador == 'papel') {
+            alert('Você ganhou! Tesoura corta Papel.');
+        } else {
+            alert(`Você perdeu! ${escolhaComputador} vence ${escolhaUsuario}`);
+        }
+
+
+    </script>
+</body>
+</html>
